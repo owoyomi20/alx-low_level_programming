@@ -1,95 +1,24 @@
-nclude <stdio.h>                                                         
+#include <stdio.h>
 
-                                                                           
-
-/**                                                                        
+/**
  *
- *  * main -Entry point                                                       
+ *  * main - main function
  *
- *   *                                                                         
+ *   *
  *
- *    * Return: Always 0 (Success)                                              
+ *    * Return: end program
  *
- *     */                                                                        
+ *     */
 
-int main(void)                                                             
+int main(void)
 
-{                                                                          
+{
 
-	int a;                                                                     
+ char n[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 
-	long int b;                                                                
 
-	long long int c;                                                           
 
-	char d;                                                                    
+	fprintf(stderr, "%s\n", n);
+	return (1);
 
-	float f;                                                                   
-
-	                                                                           
-
-	printf("size of a char: %lu byte(s)\n", (unsigned long)sizeof(d))          
-
-		printf("size of a char: %lu byte(s)\n", (unsigned long)sizeof(d))          
-
-		printf("size of a char: %lu byte(s)\n", (unsigned long)sizeof(d))          
-
-		printf("size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(d)) 
-
-		printf("size of a float: %lu byte(s)\n", (unsigned long)sizeof(f))         
-
-		~                                                                          
-
-		~                                                                          
-
-		~                                                                          
-
-		~                                           #!/bin/bash                                                                
-
-#include <stdio.h>                                                         
-
-	                                                                           
-
-	/**                                                                        
-	 *
-	 *  * main -Entry point                                                       
-	 *
-	 *   *                                                                         
-	 *
-	 *    * Return: Always 0 (Success)                                              
-	 *
-	 *     */                                                                        
-
-	int main(void)                                                             
-
-	{                                                                          
-
-	int a;                                                                     
-
-long int b;                                                                
-
-long long int c;                                                           
-
-char d;                                                                    
-
-float f;                                                                   
-
-                                                                           
-
-printf("size of a char: %lu byte(s)\n", (unsigned long)sizeof(d))          
-
-	printf("size of a char: %lu byte(s)\n", (unsigned long)sizeof(d))          
-
-	printf("size of a char: %lu byte(s)\n", (unsigned long)sizeof(d))          
-
-	printf("size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(d)) 
-
-	printf("size of a float: %lu byte(s)\n", (unsigned long)sizeof(f))         
-
-	~                                                                          
-
-	~                                                                          
-
-	~                                                                          
-
-	~                                             
+}

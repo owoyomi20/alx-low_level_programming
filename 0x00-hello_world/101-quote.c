@@ -1,13 +1,25 @@
 #include <stdio.h>
-#include <unistd.h>
+
 /**
- * main -prints exactly "and that piece of art is useful" 
- * - Dora korpa, 2015-10-19"
- *  followed by a new line, to the standard error.
- *  *  Return: Always 0 (sucess)
-*/
- int main(void)
-{
-write(2, "and that piece of art is useful\" - Dora Korpa, 2015-10-19\n", 59);
-return (1);
+ *
+ *  * main - main function
+ *
+ *   *
+ *
+ *    * Return: end program
+ *
+ *     */
+
+int main(void)
+
+{ 	
+	char n[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+
+
+
+fprintf(stderr, "%s\n", n);
+
+
+				return (1);
+
 }
