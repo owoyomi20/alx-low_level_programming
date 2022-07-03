@@ -1,34 +1,41 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
-  * main - Prints combination of numbers
-  *
-  * Return: Always (Success)
-  */
+ * main - print combos without repeats
+ *
+ * Return: 0
+ */
 int main(void)
 {
-	int c, i;
+	int f = '0';
+	int s = '0';
 
-	for (c = '0'; c <= '9'; c++)
+	while (f <= '9')
 	{
-		for (i = '0'; i <= '9'; i++)
+		s = '0';
+		while (s <= '9')
 		{
-			if (c < i)
+			if (s == f)
 			{
-				putchar(c);
-				putchar(i);
-
-				if (c != '8' || (c == '8' && i != '9'))
-				{
-					putchar(',');
-					putchar(' ');
-				}
 			}
+			else if (f > s)
+			{
+			}
+			else
+			{
+				putchar(f);
+				putchar(s);
+				if (s == '9' && f == '8')
+				{
+					break;
+				}
+				putchar(',');
+				putchar(' ');
+			}
+			s++;
 		}
+		f++;
 	}
-
 	putchar('\n');
-
 	return (0);
-}
-`
+}`
