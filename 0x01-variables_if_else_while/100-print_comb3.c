@@ -1,41 +1,29 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - print combos without repeats
+ * main - Print combinations of two digit numbers
  *
- * Return: 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int f = '0';
-	int s = '0';
+	int tens;
+	int ones;
 
-	while (f <= '9')
+	for (tens = 0; tens <= 9; tens++)
 	{
-		s = '0';
-		while (s <= '9')
+		for (ones = tens + 1; ones <= 9; ones++)
 		{
-			if (s == f)
+			putchar(tens + '0');
+			putchar(ones + '0');
+			if (tens < 8)
 			{
-			}
-			else if (f > s)
-			{
-			}
-			else
-			{
-				putchar(f);
-				putchar(s);
-				if (s == '9' && f == '8')
-				{
-					break;
-				}
 				putchar(',');
 				putchar(' ');
 			}
-			s++;
 		}
-		f++;
 	}
 	putchar('\n');
+
 	return (0);
 }`
