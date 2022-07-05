@@ -1,13 +1,9 @@
-/*
- * File: 0-holberton.c
- * Auth: Gedeon Obae Gekonge
- *
- */
+
 
 #include "main.h"
 
 /**
- * main - Prints "Holberton" followed by a new line.
+ * main - Prints "putchar" followed by a new line.
  *
  * Return: Always 0.
  */
